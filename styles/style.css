@@ -13,3 +13,77 @@
   font-weight: normal;
   font-style: normal;
 }
+/* shared styles */
+.container{
+    width: 85%;
+    margin: 3.5rem auto;
+    border-radius: 0.5rem;  
+}
+.primary-color{
+  color:#E6533C;
+}
+body{
+  background-color: black;
+}
+header{
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 19, 0.747) 0%,
+    rgb(30, 30, 30) 50%,
+    rgba(1, 1, 1, 0.719) 100%
+    );
+    background-repeat:
+     no-repeat;
+   
+ 
+}
+
+/* nav related styles */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-title h3 {
+  color: #E6533C;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.nav-options {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2.2rem;
+  padding: 0.8rem ;
+}
+
+.nav-options > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 ;
+  padding: 0;
+
+}
+
+.nav-options ul > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-options ul > li > a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#home {
+  border-radius: 46px;
+  font-weight: 600;
+  background: rgb(230, 83, 60);
+  padding: 0.7rem 1rem;
+}
