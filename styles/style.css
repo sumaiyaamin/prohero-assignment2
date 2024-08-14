@@ -638,11 +638,18 @@ text-align: center;
   }
   .bmi-table, .bmi-form { width: 100%; }
   .form-info {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "height" "weight" "age" "sex" "activity";
+    
+      grid-template-columns: repeat(2, 1fr); 
+      grid-template-areas:
+          "height weight"
+          "age sex"
+          "activity activity"; 
+
   }
-  .activity { grid-column: span 1; }
+  input , select option{
+    width: 85%;
+  }
+  .activity { grid-column: span 2; }
 
   .team-container { padding: 10px; }
   .row-1, .row-2 {
@@ -650,9 +657,9 @@ text-align: center;
     gap: 2rem;
   }
   .trainer-info {
-    left: 50%;
+    left: 55%;
     transform: translateX(-50%);
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
 
