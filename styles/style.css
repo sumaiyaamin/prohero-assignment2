@@ -2,9 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* font-family:Miama */
-@import url('https://fonts.cdnfonts.com/css/miama');
-.miama-font{
-  font-family: Miama;
+@import url('https://fonts.cdnfonts.com/css/miama?styles=170364');
+.miama-font{           
+  font-family: 'Miama', sans-serif;
+                                                
+                                                
 }
 
 .inter-normal {
@@ -24,10 +26,12 @@
 }
 body{
   background-color: black;
+  
 }
 header{
+ 
   background: linear-gradient(
-    180deg,
+    0deg,
     rgba(19, 19, 19, 0.747) 0%,
     rgb(30, 30, 30) 50%,
     rgba(1, 1, 1, 0.719) 100%
@@ -82,8 +86,107 @@ header{
 }
 
 #home {
+
   border-radius: 46px;
+  border: none;
   font-weight: 600;
-  background: rgb(230, 83, 60);
+  background-color: rgb(230, 83, 60);
   padding: 0.7rem 1rem;
+}
+.btn-primary{
+  color: #FFFFFF;
+  background-color: rgb(230, 83, 60); 
+  border: none;
+  margin-right: 14px;
+  border-radius: 2.6rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+}
+
+/* banner related styles */
+.banner{
+  display: flex;
+  align-items: center;
+  gap: 160px;
+}
+.banner-title{
+  font-size: 4.87rem;
+  line-height: 1;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+.shape{
+  font-family: 'Miama', sans-serif;
+                                                                                 
+  font-size: 4.8rem;
+  
+}
+.banner-description{
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+}
+.btn-secondary{
+  
+  color: #FFFFFF;
+  background-color: black;
+  border: 1px solid #FFFFFF;
+  border-radius: 2.6rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+}
+.video-badge{
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding:0.5rem 1rem;
+  text-align: left;
+  position: absolute;
+  top:58%;
+  left: 82%;
+
+}
+#video-badge-number{
+  font-size: 2rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+#video-badge-text{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.65);
+}
+.video-badge2{
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(48, 48, 48, 0.54);
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding:1rem;
+  text-align: left;
+  position: absolute;
+  top: 110%;
+  left: 57%;
+  display: flex;
+  align-items: center;
+
+}
+
+.circle-shape {
+  width: 40px; 
+  height: 40px; 
+  background-color: #E6533C; 
+  border-radius: 50%; 
+  margin-right: 15px; 
+}
+.video-badge2 #video-badge-number2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
 }
