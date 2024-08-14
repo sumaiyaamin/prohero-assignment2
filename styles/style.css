@@ -240,3 +240,33 @@ header{
  gap: 40px;
  margin-top: 50px;
 }
+
+/* extra-mile section styles */
+.extra-mile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 165px;
+  border-radius: 18px;
+  border: none;
+ background: rgb(34, 34, 34);
+ padding: 40px 54px;
+}
+.section-title{
+  font-size: 3rem;
+font-weight: 900;
+color: #FFFFFF;
+text-align: left;
+}
+.section-description{
+  color: rgba(255, 255, 255, 0.5);
+
+font-size: 0.8rem;
+font-weight: 400;
+text-align: left;
+}
+.image-container img{
+  width: 100%;
+  border-radius: 18px;
+  
+}
