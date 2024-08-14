@@ -21,11 +21,21 @@
     margin: 3.5rem auto;
     border-radius: 0.5rem;  
 }
+
+.circular-image {
+  width: 180px;
+  height: 180px; 
+  border-radius: 50%; 
+  border: 5px solid #000; 
+  object-fit: cover; 
+}
+
 .primary-color{
   color:#E6533C;
 }
 body{
   background-color: black;
+  max-width: 1280px;
   
 }
 header{
