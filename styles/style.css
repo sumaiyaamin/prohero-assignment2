@@ -200,9 +200,20 @@ header{
 .circle-shape {
   width: 40px; 
   height: 40px; 
-  background-color: #E6533C; 
   border-radius: 50%; 
-  margin-right: 15px; 
+  margin-right: 10px;
+
+  background-color: #E6533C;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  position: relative; 
+}
+
+.circle-shape i {
+  font-size: 16px; 
+  color: rgba(255, 255, 255, 0.8); 
+  position: absolute; 
 }
 .video-badge2 #video-badge-number2{
   font-size: 1.5rem;
@@ -543,7 +554,6 @@ text-align: center;
 /* Responsive Media Query */
 
 @media screen and (max-width: 576px) {
-  
   .nav-options { display: none; }
   .ham-burger {
     display: block;
@@ -565,14 +575,12 @@ text-align: center;
   .banner-title { font-size: 3rem; }
   .shape { font-size: 3rem; }
   
-
   .button-container { gap: 14px; }
   .btn-primary, .btn-secondary {
     width: 169px;
     font-size: 1rem;
     padding: 1rem;
   }
-
 
   .habit-images-container {
     grid-template-columns: 1fr;
@@ -594,7 +602,6 @@ text-align: center;
   }
   .section-title { font-size: 2rem; }
 
-
   .bmi-container {
     flex-direction: column;
     gap: 50px;
@@ -605,11 +612,9 @@ text-align: center;
     grid-template-areas:
       "height" "weight" "age" "sex" "activity";
   }
-  .activity 
-  { grid-column: span 1; }
+  .activity { grid-column: span 1; }
 
-  .team-container 
-  { padding: 10px; }
+  .team-container { padding: 10px; }
   .row-1, .row-2 {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -638,6 +643,7 @@ text-align: center;
   .column-1, .column-2, .column-3 { width: 100%; }
   .footer .footer-tag { text-align: left; }
   hr { width: 100%; }
+
   .recipe-title {
     font-size: 2rem;
   }
@@ -655,17 +661,33 @@ text-align: center;
     height: 200px;
   }
 
- 
   img {
     max-width: 100%;
     height: auto;
   }
-  
 
   .banner, .habit, .bmi-section, .team, .footer {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
   }
+
+  /* Adjustments for video badges */
+  .banner-img-container {
+    position: relative; 
+  }
+
+  .video-badge {
+    position: absolute; 
+    top: 20%; 
+    left: 60%; 
+    transform: scale(0.8); 
+  }
+
+  .video-badge2 {
+    position: absolute; 
+    top: 70%; 
+    right: 70%; 
+    transform: scale(0.8);
+  }
 }
- 
