@@ -201,3 +201,42 @@ header{
   font-weight: 700;
   color: #FFFFFF;
 }
+
+/* habit section */
+.habit-title{
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color:#FFFFFF;
+}
+.habit-description{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.habit-image h5{
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  text-align: center;
+ 
+
+}
+.habit-image p{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+ 
+}
+.habit-images-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+ align-items: center;
+ text-align: center;
+ justify-content: center;
+ gap: 40px;
+ margin-top: 50px;
+}
