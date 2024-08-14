@@ -137,6 +137,7 @@ header{
   font-weight: 600;
   padding: 1rem 3rem;
 }
+
 .video-badge{
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -147,8 +148,8 @@ header{
   padding:0.5rem 1rem;
   text-align: left;
   position: absolute;
-  top:58%;
-  left: 82%;
+  top:350px;
+  right: 70px;
 
 }
 #video-badge-number{
@@ -171,8 +172,8 @@ header{
   padding:1rem;
   text-align: left;
   position: absolute;
-  top: 110%;
-  left: 57%;
+  top: 650px;
+  right:350px;
   display: flex;
   align-items: center;
 
