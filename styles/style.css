@@ -50,6 +50,15 @@ header{
    
  
 }
+.btn-primary{
+  color: #FFFFFF;
+  background-color: rgb(230, 83, 60); 
+  border: none;
+  border-radius: 2.6rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+}
 
 /* nav related styles */
 .nav-bar {
@@ -104,16 +113,7 @@ header{
   background-color: rgb(230, 83, 60);
   padding: 0.7rem 1rem;
 }
-.btn-primary{
-  color: #FFFFFF;
-  background-color: rgb(230, 83, 60); 
-  border: none;
-  margin-right: 14px;
-  border-radius: 2.6rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 1rem 3rem;
-}
+
 
 /* banner related styles */
 .banner{
@@ -296,7 +296,8 @@ text-align: left;
   width: 100%;
   height: auto;
   border-radius: 18px;
-  object-fit: cover;
+  object-fit: none;
+object-position: 70% 33%;
 }
 
 .text-container {
@@ -453,6 +454,7 @@ text-align: left;
 .bmi-form{
   width: 570px;
 }
+
 .form-info {
  
   display: grid;
@@ -530,6 +532,12 @@ padding: 20px;
   font-weight: 800;
   color: #FFFFFF;
 }
+.name{
+  color: rgba(255, 255, 255, 0.5);
+font-size: 0.9rem;
+font-weight: 400;
+text-align: left;
+}
 /* footer related styles */
 .footer{
   background: rgba(255, 255, 255, 0.1);
@@ -577,9 +585,9 @@ hr {
 font-size: 1.2rem;
 font-weight: 400;
 text-align: center;
+padding: 20px;
 
 }
-
 
 /* Responsive Media Query */
 
@@ -629,6 +637,9 @@ text-align: center;
   }
   .image-container, .text-container {
     max-width: 100%;
+  }
+  .image-container img{
+    object-fit: cover;
   }
   .section-title { font-size: 2rem; }
 
@@ -727,4 +738,10 @@ text-align: center;
     right: 70%; 
     transform: scale(0.8);
   }
+}
+
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 375px) {
+  .button-container { gap: 10px; }
 }
